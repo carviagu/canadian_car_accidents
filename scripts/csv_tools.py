@@ -23,8 +23,8 @@ def canadian_car_accidents_import():
     '''
     Import Canada Car Accidents dataset.
     '''
-    if (os.path.isfile("../data/NCDB_1999_to_20143.csv")):
-        return pd.read_csv("../data/NCDB_1999_to_2014.csv", low_memory=False)
-        
+    if (os.path.isfile("../data/NCDB_1999_to_2014.csv")):
+        return(pd.read_csv("../data/NCDB_1999_to_2014.csv", low_memory=False))
+
     return(print("ERROR: Canada Car Accidents don't available at data folder. " + 
     "Please download the dataset from: https://www.kaggle.com/tbsteal/canadian-car-accidents-19942014"))
