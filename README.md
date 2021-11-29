@@ -10,8 +10,8 @@ Dataset: Canadian Car Accidents (https://www.kaggle.com/tbsteal/canadian-car-acc
 ---
 
 Autores / Authors:
-Álvaro Serrano del Rincón (a.serranodelrincon@cunef.edu) Repo: 
-Carlos Viñals Guitart (carlos.vinals@cunef.edu) Repo: https://github.com/carviagu/canadian_car_accidents
+* Álvaro Serrano del Rincón (a.serranodelrincon@cunef.edu). Repo: 
+* Carlos Viñals Guitart (carlos.vinals@cunef.edu). Repo: https://github.com/carviagu/canadian_car_accidents
 
 ---
 
