@@ -4,8 +4,9 @@
 
 [**ENG**] Machine Learning practice where we analize Canadian Car Accidents dataset and create models to stablish if an accident can have fatal victims. 
 
-Dataset: Canadian Car Accidents (https://www.kaggle.com/tbsteal/canadian-car-accidents-19942014)
+> Dataset: Canadian Car Accidents (https://www.kaggle.com/tbsteal/canadian-car-accidents-19942014)
 
+<br>
 
 ---
 
@@ -15,3 +16,20 @@ Autores / Authors:
 
 ---
 
+<br>
+
+### Contenido
+1. **Notebooks.**
+  Jupyter notebooks con las distintas fases del proceso de trabajo: Introducción, EDA, Preprocesado, Modelos, ...
+3. **Scripts.**
+  Funciones útiles creadas para agilizar el trabajo y que estén disponible a todos los notebooks. 
+3. **Docs.**
+  Documentación relevante: Diccionario de Datos, Informes, ...
+4. **Images.**
+  Recursos varios asociados a los notebooks.
+5. **Data.**
+  Archivos CSV relativos al trabajo realizado con los datos. El dataset original no está disponible por ser muy pesado, se puede descargar aquí:https://www.kaggle.com/tbsteal/canadian-car-accidents-19942014
+6. **HTML.**
+  Versión HTML de los notebooks. 
+  
+<br>
