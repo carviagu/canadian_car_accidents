@@ -1,7 +1,9 @@
+############################################
+# Script with functions to manage data files
+############################################
 
 import pandas as pd
 import os 
-
 
 def csv_parquet_converter(origin = "", dest = "output.parquet"):
     '''
@@ -19,9 +21,14 @@ def csv_parquet_converter(origin = "", dest = "output.parquet"):
     return("Conversion succesfull. File is available at: " + dest)
 
 
+
+# This method is created to check the dataset before making import
+# This was created due to the dataset is very heavy to have it at
+# the repository. So sometimes user can forget to donwload it. 
 def canadian_car_accidents_import():
     '''
-    Import Canada Car Accidents dataset.
+    Import Canada Car Accidents dataset. If the dataset is not
+    at data folder, will throw an error. 
     '''
     if (os.path.isfile("../data/NCDB_1999_to_2014.csv")):
         return(pd.read_csv("../data/NCDB_1999_to_2014.csv", low_memory=False))
