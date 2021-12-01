@@ -23,6 +23,8 @@ def special_values_summary(df = None, vals=None):
     # Columns list in the dataset
     cols_svals_df = pd.DataFrame(data = df.columns, columns = ['column_name'])
 
+    sum_column = pd.DataFrame(0, index=np.arange(len(cols_svals_df.index)), columns=['store'])
+
     # Loop start
     for value in vals:
     
@@ -33,7 +35,8 @@ def special_values_summary(df = None, vals=None):
         
         # Creates a column with counts
         cols_svals_df[value[0]] = totals
-    
+        sum_column['store'] = sum_column['store'] + cols_svals_df[value[0]]
+
         # Computes percentaje of the occurencies in a column within the total elements.
         percentajes = list()
         for col in cols_svals_df['column_name']:
@@ -45,7 +48,7 @@ def special_values_summary(df = None, vals=None):
     # Loop end
 
     # Computes total and the percentaje
-    cols_svals_df['total'] = cols_svals_df['Q'] + cols_svals_df['N'] + cols_svals_df['U'] + cols_svals_df['X']
+    cols_svals_df['total'] = sum_column['store']
     cols_svals_df['total%'] = np.round(cols_svals_df['total'] / len(df.index) * 100, decimals = 1)
 
     return cols_svals_df

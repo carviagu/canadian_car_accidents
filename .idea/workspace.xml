@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Minor change to README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/canadian_car_accidents.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/canadian_car_accidents.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/02_C_SEV_model/.ipynb_checkpoints/021_Preprocessing-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/02_C_SEV_model/021_Preprocessing.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/csv_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/csv_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/eda_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/eda_tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,4 +34,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Minor change to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor change to README.md" />
+  </component>
 </project>
