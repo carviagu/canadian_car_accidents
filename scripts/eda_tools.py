@@ -8,15 +8,18 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 
 
-def special_values_summary(df = None, vals = []):
+def special_values_summary(df = None, vals=None):
     '''
     Returns a dataset with a summary of the pressence of selected values
     in the different values. 
-    Params:
-    :df: Dataset to analyze
-    :vals: List with the selected values 
+    :param df: Dataset to analyze
+    :param vals: List with the selected values
+    :return: dataframe
     '''
-    
+
+    if vals is None:
+        vals = []
+
     # Columns list in the dataset
     cols_svals_df = pd.DataFrame(data = df.columns, columns = ['column_name'])
 
@@ -48,7 +51,10 @@ def special_values_summary(df = None, vals = []):
     return cols_svals_df
 
 
-def get_corr_matrix(dataset = None, metodo='pearson', size_figure=[10,8]):
+def get_corr_matrix(dataset = None, metodo='pearson', size_figure=None):
+
+    if size_figure is None:
+        size_figure = [10, 8]
 
     if dataset is None:
         print(u'\nHace falta pasar argumentos a la función')
@@ -70,11 +76,11 @@ def get_corr_matrix(dataset = None, metodo='pearson', size_figure=[10,8]):
 def norm_category(df = None, obj_val = "", cat_val = ""):
     '''
     Computes the normalized of a categorical variable givin an 
-    objetive variable. 
-    Params:
-    :df: Dataset to normalize
-    :obj_val: Object variable
-    :cat_val: Categorial variable
+    objetive variable.
+    :param df: Dataset to normalize
+    :param obj_val: Object variable
+    :param cat_val: Categorial variable
+    :return: Dataframe
     '''
     grouped = df.groupby([obj_val, cat_val]).count().iloc[:,1]
     grouped = grouped.reset_index()
@@ -83,3 +89,15 @@ def norm_category(df = None, obj_val = "", cat_val = ""):
                                  grouped.groupby(obj_val)['counted'].transform('sum') * 100, decimals = 3)
     
     return grouped
+
+def dataset_overview(data=None):
+    '''
+    Returns a dataframe with column type info and missing analysis.
+    :param data: Dataset to analyze
+    :return: Dataframe
+    '''
+    types_df = data.dtypes.reset_index()
+    types_df.columns = ['columna', 'tipo_dato']
+    types_df['nulos'] = data.isnull().sum().to_numpy()
+    types_df['nulos%'] = types_df['nulos'] / data.shape[0] * 100
+    return types_df

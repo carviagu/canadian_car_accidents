@@ -13,7 +13,7 @@ Información sobre el entorno de conda que se utiliza en el proyecto y el estilo
 ## Environment
 Utilizamos un entorno de anaconda.
 ```
-conda create --name ML_P1
+conda create --name ML_P1 python=3.9.7
 ```
 Instalamos el kernel y los paquetes a utilizar.
 ```
