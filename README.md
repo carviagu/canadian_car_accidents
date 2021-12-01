@@ -1,4 +1,4 @@
-# Canadian Car Accidents: Modelado
+# Canadian Car Accidents: Modelo
 
 [**ESP**] Trabajo de Aprendizaje Automático donde analizamos el dataset de Canadian Car Accidents y creamos modelos para determinar la posibilidad de fallecimientos ante un accidente dado.
 
