@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Minor change to README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/canadian_car_accidents.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/canadian_car_accidents.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/02_C_SEV_model/.ipynb_checkpoints/021_Preprocessing-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/02_C_SEV_model/021_Preprocessing.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/csv_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/csv_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/01_EDA-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/01_EDA-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/01_EDA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/01_EDA.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/02_C_SEV_model/.ipynb_checkpoints/031_Preprocessing-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/02_C_SEV_model/031_Preprocessing.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/eda_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/eda_tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
