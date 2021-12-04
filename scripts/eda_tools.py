@@ -1,5 +1,5 @@
 ############################################
-# Script with functions to manage dataset
+# Script with functions to analyze dataset
 ############################################
 
 import pandas as pd
