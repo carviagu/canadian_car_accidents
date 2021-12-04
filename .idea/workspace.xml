@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Minor change to README.md" />
+    <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Minor change to README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/01_EDA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/01_EDA.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/02_Solution.ipynb" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
