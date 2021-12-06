@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Minor change to README.md">
-      <change afterPath="$PROJECT_DIR$/scripts/model_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/canadian_car_accidents.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/canadian_car_accidents.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/01_EDA-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/01_EDA-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/02_EDACSEV-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/02_EDACSEV-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sev_df.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/sev_df.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/03_PreprocessingCSEV-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/03_PreprocessingCSEV-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/04_ModelsCSEV-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/04_ModelsCSEV-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/01_EDA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/01_EDA.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/02_EDACSEV.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/02_EDACSEV.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/03_PreprocessingCSEV.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/03_PreprocessingCSEV.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/04_ModelsCSEV.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/04_ModelsCSEV.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/eda_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/eda_tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

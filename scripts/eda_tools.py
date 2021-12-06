@@ -77,7 +77,7 @@ def get_corr_matrix(dataset=None, metodo='pearson', size_figure=None):
 
 def norm_category(df=None, obj_val="", cat_val=""):
     '''
-    Computes the normalized of a categorical variable givin an 
+    Computes the normalized of a categorical variable giving an
     objetive variable.
     :param df: Dataset to normalize
     :param obj_val: Object variable
@@ -108,7 +108,7 @@ def dataset_overview(data=None):
 
 def classes_overview(df=None, obj_val=""):
     '''
-    Returns a dataframe with percentaje and absolute values of the variable.
+    Returns a dataframe with percentage and absolute values of the variable.
     :param df: Dataset to analyze
     :param obj_val: Objective variable
     :return: Dataframe
@@ -116,3 +116,44 @@ def classes_overview(df=None, obj_val=""):
     temp = df[obj_val].value_counts(normalize=True).mul(100).rename('percentaje').reset_index()
     temp_cont = df[obj_val].value_counts().reset_index()
     return pd.merge(temp, temp_cont, on=['index'], how='inner')
+
+
+def classes_overview_target(df=None, target = "", obj_val=""):
+    '''
+    Returns a dataframe with percentage and absolute values of the variable, and the majority target
+    variable of the section.
+    :param df: Dataset to analyze
+    :param obj_val: Objective variable
+    :param target: Target variable
+    :return: Dataframe
+    '''
+    if (target == ""):
+        print("ERROR: Target variable is missing")
+        return -1
+
+    overview = classes_overview(df = df, obj_val = obj_val)
+
+    grouped = norm_category(df = df, obj_val = target, cat_val = obj_val)
+
+    values = df[target].unique()
+    cats = df[obj_val].unique()
+
+    temp = list()
+    for ca in cats:
+        hist = {}
+        for val in values:
+            hist[val] = grouped[(grouped[target] == val) &
+                                (grouped[obj_val] == ca)]['group%'].iloc[0]
+
+        maxi = hist[values[0]]
+        selected = values[0]
+        for val in values:
+            if maxi < hist[val]:
+                maxi = hist[val]
+                selected = val
+
+        temp.append(selected)
+
+    overview[target] = temp
+
+    return overview
