@@ -1,0 +1,20 @@
+######################
+CSEV MODELS LEGEND
+######################
+
+- Model 0: Modelo general, utiliza todas las variables
+- Model 1: Modelo reducido mediante Lasso (0.08) utiliza:
+  ['C_VEHS', 'C_CONF', 'C_RCFG', 'C_WTHR', 'C_RSUR', 'C_RALN', 'C_TRAF',
+       'C_HOUR_N'] 
+ *Nota: Quitando C_WTHR el modelo mejora en su matriz de confusión.
+
+- Model 2: Modelo que utiliza las variables C_MNTH y C_WDAY con una nueva reducción de categorías (2)
+y está reducido mediante Lasso (0.08) utiliza:
+['C_MNTH', 'C_WDAY', 'C_VEHS', 'C_CONF', 'C_RCFG', 'C_RSUR', 'C_RALN',
+       'C_TRAF', 'C_HOUR_N']
+
+
+
+PROBLEMAS DETECTADOS: 
+C_CONF con MeanEncoding genera problema de overfitting, buscar otro encoding sería recomendable, pues lasso
+la califica de variable importante (ver si se debe al encoding)
