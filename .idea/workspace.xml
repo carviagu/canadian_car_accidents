@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Minor change to README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/csev/model_2/testCSEV.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/csev/model_2/testCSEV.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/csev/model_2/trainCSEV.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/csev/model_2/trainCSEV.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/csev/model_5/testCSEV.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/csev/model_5/trainCSEV.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/03_PreprocessingCSEV_6-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/03_PreprocessingCSEV_6-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/03_PreprocessingCSEV_6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/03_PreprocessingCSEV_6.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/GLM-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/GLM-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/LightGBM-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/LightGBM-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/RANDOM_FOREST-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/RANDOM_FOREST-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/SVM-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/SVM-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/XGBBoost-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/.ipynb_checkpoints/XGBBoost-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/GLM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/GLM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/LightGBM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/LightGBM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/RANDOM_FOREST.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/RANDOM_FOREST.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/SVM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/SVM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/XGBBoost.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/pruebas_modelos/carviagu/XGBBoost.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
