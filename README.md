@@ -1,35 +1,11 @@
-# Canadian Car Accidents: Modelo
+# Canadian Car Accidents: Modelo (MODEL TESTING BRANCH)
 
-[**ESP**] Trabajo de Aprendizaje Automático donde analizamos el dataset de Canadian Car Accidents y creamos modelos para determinar la posibilidad de fallecimientos ante un accidente dado.
+[**ESP**] MODEL TESING BRANCH. Prueba de modelos, y preprocesados distintos para encontrar el más adecuado.
 
-[**ENG**] Machine Learning practice where we analize Canadian Car Accidents dataset and create models to stablish if an accident can have fatal victims. 
+[**ENG**] MODEL TESING BRANCH. Model testing and preprocessing of different models to find the best one. 
+
 
 > Dataset: Canadian Car Accidents (https://www.kaggle.com/tbsteal/canadian-car-accidents-19942014)
 
 <br>
 
----
-
-Autores / Authors:
-* Álvaro Serrano del Rincón (a.serranodelrincon@cunef.edu). Repo: 
-* Carlos Viñals Guitart (carlos.vinals@cunef.edu). Repo: https://github.com/carviagu/canadian_car_accidents
-
----
-
-<br>
-
-### Contenido
-1. **Notebooks.**
-  Jupyter notebooks con las distintas fases del proceso de trabajo: Introducción, EDA, Preprocesado, Modelos, ...
-3. **Scripts.**
-  Funciones útiles creadas para agilizar el trabajo y que estén disponible a todos los notebooks. 
-3. **Docs.**
-  Documentación relevante: Diccionario de Datos, Informes, ...
-4. **Images.**
-  Recursos varios asociados a los notebooks.
-5. **Data.**
-  Archivos CSV relativos al trabajo realizado con los datos. El dataset original no está disponible por ser muy pesado, se puede descargar aquí:https://www.kaggle.com/tbsteal/canadian-car-accidents-19942014
-6. **HTML.**
-  Versión HTML de los notebooks. 
-  
-<br>
