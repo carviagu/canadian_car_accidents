@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Minor change to README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/04_ModelsCSEV.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/04_ModelsCSEV.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/model_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/model_tools.py" afterDir="false" />
-    </list>
+    <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Minor change to README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
