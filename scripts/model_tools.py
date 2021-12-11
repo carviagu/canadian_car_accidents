@@ -2,9 +2,6 @@
 # Script with functions to valuate models
 ############################################
 
-import pandas as pd
-import numpy as np
-import seaborn as sns
 from sklearn import metrics
 from matplotlib import pyplot as plt
 
@@ -26,7 +23,7 @@ def confusion_matrix_estimator(titles_options = None, model = None,
             pred,
             display_labels=labels,
             cmap=plt.cm.Blues,
-            normalize=normalize,
+            normalize=normalize
         )
         disp.ax_.set_title(title)
 
@@ -43,7 +40,7 @@ def confusion_matrix(titles_options = None, test = None, pred = None, labels = N
             pred,
             display_labels=labels,
             cmap=plt.cm.Blues,
-            normalize=normalize,
+            normalize=normalize
         )
         disp.ax_.set_title(title)
 
