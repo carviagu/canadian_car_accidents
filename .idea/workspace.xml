@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Minor change to README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/canadian_car_accidents.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/canadian_car_accidents.iml" afterDir="false" />
+    <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Added ROC_AUC score to global evaluation metrics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/glm_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/models/glm_model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/lgbm_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/models/lgbm_model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/rf_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/models/rf_model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/svm_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/models/svm_model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/xgb_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/models/xgb_model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/03_PreprocessingCSEV.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/03_PreprocessingCSEV.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/04_ModelsCSEV.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/04_ModelsCSEV.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/05_OptimizationCSEV.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/05_OptimizationCSEV.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/07_Final.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/07_Final.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,6 +65,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Minor change to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor change to README.md" />
+    <MESSAGE value="Added ROC_AUC score to global evaluation metrics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ROC_AUC score to global evaluation metrics" />
   </component>
 </project>

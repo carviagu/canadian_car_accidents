@@ -3,6 +3,7 @@
 *.xls
 *.parquet
 *.csv
+*.sav
 
 # Files
 /data/NCBD_partial_num_float.csv
