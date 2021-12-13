@@ -33,6 +33,7 @@ Se puede encontrar más información sobre la gestión de entornos en https://do
 * Scitkit Learn: https://scikit-learn.org/stable/install.html
 * Scikit Plot: https://anaconda.org/conda-forge/scikit-plot
 * Shap: https://anaconda.org/conda-forge/shap
+* Tensorflow: https://www.tensorflow.org/install/pip?hl=es-419
 
 <br>
 
