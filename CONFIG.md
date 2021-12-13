@@ -22,13 +22,17 @@ conda install ipykernel
 ```
 Se puede encontrar más información sobre la gestión de entornos en https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
-### Paquetes (rev. 01/12/2021)
+### Paquetes (rev. 13/12/2021)
 * Pandas: https://anaconda.org/anaconda/pandas
 * Numpy: https://anaconda.org/anaconda/numpy
 * Seaborn: https://anaconda.org/anaconda/seaborn
 * Matplotlib: https://anaconda.org/conda-forge/matplotlib
 * Nbconvert: https://anaconda.org/anaconda/nbconvert
 * OS: https://anaconda.org/jmcmurray/os
+* Pickel: https://anaconda.org/conda-forge/pickle5
+* Scitkit Learn: https://scikit-learn.org/stable/install.html
+* Scikit Plot: https://anaconda.org/conda-forge/scikit-plot
+* Shap: https://anaconda.org/conda-forge/shap
 
 <br>
 
