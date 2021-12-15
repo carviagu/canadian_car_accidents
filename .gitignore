@@ -2,7 +2,7 @@
 *.xlsx
 *.xls
 *.parquet
-*.csv
+#*.csv
 *.sav
 
 # Files
