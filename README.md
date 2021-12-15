@@ -11,7 +11,7 @@
 ---
 
 Autores / Authors:
-* Álvaro Serrano del Rincón (a.serranodelrincon@cunef.edu). Repo: 
+* Álvaro Serrano del Rincón (a.serranodelrincon@cunef.edu). Repo: https://github.com/aserincon/canadian_car_accidents
 * Carlos Viñals Guitart (carlos.vinals@cunef.edu). Repo: https://github.com/carviagu/canadian_car_accidents
 
 ---
