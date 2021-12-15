@@ -2,15 +2,10 @@
 *.xlsx
 *.xls
 *.parquet
-#*.csv
+*.csv
 *.sav
 
 # Files
-/data/NCBD_partial_num_float.csv
 /data/NCDB_1999_to_2014.csv
 /data/sev_df.csv
-/data/sev_df_02.csv
-/data/sev_df_03.csv
-/data/sev_df_04.csv
-/data/sev_df_05.csv
 
