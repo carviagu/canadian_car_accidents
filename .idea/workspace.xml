@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40c1995f-638c-4b73-b9cd-fee1773844bf" name="Changes" comment="Added ROC_AUC score to global evaluation metrics">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_12_2021_16_08__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_12_2021_16_08__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/00_Introduction-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/00_Introduction-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/models.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/models.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/01_EDA-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/01_EDA-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/00_Introduction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/00_Introduction.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/01_EDA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/01_EDA.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/04_ModelsCSEV.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/04_ModelsCSEV.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/05_OptimizationCSEV.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/05_OptimizationCSEV.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/eda_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/eda_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/model_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/model_tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

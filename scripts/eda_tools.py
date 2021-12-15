@@ -55,6 +55,13 @@ def special_values_summary(df=None, vals=None):
 
 
 def get_corr_matrix(dataset=None, metodo='pearson', size_figure=None):
+    '''
+    Prints a correlation matrix
+    :param dataset: dataset
+    :param metodo: method
+    :param size_figure: size of the displayed matrix
+    :return: plot
+    '''
     if size_figure is None:
         size_figure = [10, 8]
 

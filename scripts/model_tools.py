@@ -7,6 +7,12 @@ from matplotlib import pyplot as plt
 
 
 def accuracy(test=None, pred=None):
+    '''
+    Returns model accuracy
+    :param test: real values
+    :param pred: predicted values
+    :return:
+    '''
     if test is None or pred is None:
         print('ERROR: Real and Predicted values must be provided')
         return -1
@@ -16,6 +22,15 @@ def accuracy(test=None, pred=None):
 
 def confusion_matrix_estimator(titles_options = None, model = None,
                                test = None, pred = None, labels = None):
+    '''
+    Returns confusion matrix using only the labels
+    :param titles_options:
+    :param model:
+    :param test:
+    :param pred:
+    :param labels:
+    :return:
+    '''
     for title, normalize in titles_options:
         disp = metrics.ConfusionMatrixDisplay.from_estimator(
             model,
@@ -34,6 +49,14 @@ def confusion_matrix_estimator(titles_options = None, model = None,
 
 
 def confusion_matrix(titles_options = None, test = None, pred = None, labels = None):
+    '''
+    Prints confusion matrix making the predictions
+    :param titles_options:
+    :param test:
+    :param pred:
+    :param labels:
+    :return:
+    '''
     for title, normalize in titles_options:
         disp = metrics.ConfusionMatrixDisplay.from_predictions(
             test,
@@ -51,7 +74,13 @@ def confusion_matrix(titles_options = None, test = None, pred = None, labels = N
 
 
 def roc_curve(test = None, pred = None, label = "Model"):
-
+    '''
+    Prints the model roc_curve
+    :param test:
+    :param pred:
+    :param label:
+    :return:
+    '''
     yhat = pred
     # calculate roc curves
     fpr, tpr, thresholds = metrics.roc_curve(test, yhat)
@@ -66,6 +95,11 @@ def roc_curve(test = None, pred = None, label = "Model"):
     plt.show()
     
 def models_summary(models = None):
+    '''
+    Makes model summary with Recall, Precission and AUC scores
+    :param models:
+    :return:
+    '''
     scores = pd.DataFrame(data = models.keys(), columns = ['Models'], index = [0, 1, 2, 3, 4])
 
     pres = list()
