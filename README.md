@@ -27,11 +27,11 @@ Autores / Authors:
   Documentación relevante: Diccionario de Datos, Informes, ...
 4. **Images.**
   Recursos varios asociados a los notebooks.
-5. **Data.**
-  Archivos CSV relativos al trabajo realizado con los datos. El dataset original y su versión agrupada no están disponible por ser muy pesados, se puede descargar el original aquí:https://www.kaggle.com/tbsteal/canadian-car-accidents-19942014
+5. **Data.** (solo en repo)
+  Archivos CSV relativos al trabajo realizado con los datos. El dataset original y su versión agrupada no están disponible por ser muy pesados, se puede descargar el original aquí:https://www.kaggle.com/tbsteal/canadian-car-accidents-19942014 
 6. **HTML.**
   Versión HTML de los notebooks. 
-7. **Models.**
+7. **Models.** (solo en repo)
   Modelos guardados trás su creación y optimización.
 
 
