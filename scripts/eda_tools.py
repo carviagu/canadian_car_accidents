@@ -1,5 +1,6 @@
 ############################################
 # Script with functions to analyze dataset
+# Authors: aserincon & carviagu
 ############################################
 
 import pandas as pd
@@ -13,7 +14,7 @@ def special_values_summary(df=None, vals=None):
     Returns a dataset with a summary of the pressence of selected values
     in the different values. 
     :param df: Dataset to analyze
-    :param vals: List with the selected values
+    :param vals: List with the selected values as list format each value
     :return: dataframe
     '''
 
@@ -23,6 +24,7 @@ def special_values_summary(df=None, vals=None):
     # Columns list in the dataset
     cols_svals_df = pd.DataFrame(data=df.columns, columns=['column_name'])
 
+    # Counter for each variable
     sum_column = pd.DataFrame(0, index=np.arange(len(cols_svals_df.index)), columns=['store'])
 
     # Loop start
@@ -47,7 +49,7 @@ def special_values_summary(df=None, vals=None):
         cols_svals_df[value[0] + '%'] = percentajes
     # Loop end
 
-    # Computes total and the percentaje
+    # Adds the total and the percentaje to dataframe
     cols_svals_df['total'] = sum_column['store']
     cols_svals_df['total%'] = np.round(cols_svals_df['total'] / len(df.index) * 100, decimals=1)
 
@@ -91,9 +93,13 @@ def norm_category(df=None, obj_val="", cat_val=""):
     :param cat_val: Categorial variable
     :return: Dataframe
     '''
+
+    # Grouping and counting the occurencies of category variable depending of the object variable
     grouped = df.groupby([obj_val, cat_val]).count().iloc[:, 1]
     grouped = grouped.reset_index()
     grouped.columns = [obj_val, cat_val, 'counted']
+
+    # Computes the percentage of elements for each object variable value (group) and category (subgroup)
     grouped['group%'] = np.round(grouped['counted'] /
                                  grouped.groupby(obj_val)['counted'].transform('sum') * 100, decimals=3)
 

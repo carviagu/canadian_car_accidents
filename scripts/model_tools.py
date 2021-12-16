@@ -94,30 +94,3 @@ def roc_curve(test = None, pred = None, label = "Model"):
     # show the plot
     plt.show()
     
-def models_summary(models = None):
-    '''
-    Makes model summary with Recall, Precission and AUC scores
-    :param models:
-    :return:
-    '''
-    scores = pd.DataFrame(data = models.keys(), columns = ['Models'], index = [0, 1, 2, 3, 4])
-
-    pres = list()
-    rec = list()
-    roc = list()
-
-    for key in models:
-        Y_pred = models[key].predict(X_test)
-        # Precision
-        pres.append(metrics.precision_score(Y_test, Y_pred, zero_division = 0.0, labels=[0], average='weighted'))
-        # Recall
-        rec.append(metrics.recall_score(Y_test, Y_pred, zero_division = 0.0, labels=[0], average='weighted'))
-        # RocAUC
-        roc.append(metrics.roc_auc_score(Y_test, models[key].predict_proba(X_test)[:,1]))
-
-    scores['Precision'] = pres
-    scores['Recall'] = rec
-    scores['Roc_Auc'] = roc
-    
-    return scores
-    
