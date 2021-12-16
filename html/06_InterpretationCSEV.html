@@ -13464,6 +13464,7 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <li><a href="https://towardsdatascience.com/interpretable-machine-learning-with-xgboost-9ec80d148d27">https://towardsdatascience.com/interpretable-machine-learning-with-xgboost-9ec80d148d27</a></li>
 <li><a href="https://shap.readthedocs.io/en/latest/example_notebooks/tabular_examples/tree_based_models/Census%20income%20classification%20with%20XGBoost.html">https://shap.readthedocs.io/en/latest/example_notebooks/tabular_examples/tree_based_models/Census%20income%20classification%20with%20XGBoost.html</a></li>
 <li><a href="https://christophm.github.io/interpretable-ml-book/storytime.html">https://christophm.github.io/interpretable-ml-book/storytime.html</a></li>
+<li><a href="https://towardsdatascience.com/explain-your-model-with-the-shap-values-bc36aac4de3d">https://towardsdatascience.com/explain-your-model-with-the-shap-values-bc36aac4de3d</a></li>
 </ul>
 
 </div>
@@ -13859,7 +13860,7 @@ Name: C_SEV, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Analizamos la primera predicción:</p>
+<p>Analizamos la primera predicción (<strong>Interpretación Local</strong>):</p>
 
 </div>
 </div>
@@ -13914,9 +13915,28 @@ Name: C_SEV, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Esta gráfica muestra la influencia de cada variable a la hora de determinar si en concreto este accidente del dataset tiene o no fallecidos.</p>
-<p>En este caso, es un accidente ocurrido por la mañana (<code>C_HOUR_M</code>= 1), de un lunes (<code>C_WDAY</code>= 1) sin señales de tráfico (<code>C_TRAF</code>= 0), siendo una colisión de dos vehículos (<code>C_VEHS</code>= 2), en sentido opuesto (<code>C_CONF_TO</code>= 1), en una carretera sin curvas (<code>C_RALN</code>= 1) y sin ningún tipo de intersección (<code>C_RCFG</code>= 1).</p>
-<p>De acuerdo con la tipología del accidente, SHAP especifica un aumento o disminución de la probabilidad de fallecidos en un accidente, en función de los valores que tomen las variables explicativas, siempre partiendo de un valor base que es <code>0.013242</code>. Podemos observar como hay una mayor probabilidad para que el accidente sea mortal (rosa).</p>
+<p>Esta gráfica muestra la influencia de cada variable a la hora de determinar si en concreto este accidente del dataset tiene o no fallecidos, es decir, a nivel local.</p>
+<p>Por lo tanto, existen dos fuerzas opuestas en este gráfico: las que empujan al modelo a que prediga un valor de 1 (que no habrá fallecidos en el siniestro) están orientadas hacia la derecha, <strong>en color rojo</strong>, y las que lo fuerzan a que prediga un valor de 0 (habrá algún fallecido en el accidente) están orientadas hacia la izquierda y se muestran <strong>en color azul</strong>.</p>
+<p>Las variables indican (por orden de impacto en la decisión) se muestran a continuación. Las variables <strong>rojas</strong>.</p>
+<ul>
+<li><code>C_TRAF</code> = 0, carretera señalizada</li>
+<li><code>C_RCFG</code> = 1, carretera no habitual (específica)</li>
+<li><code>C_VEHS</code> = 2 vehículo involucrados.</li>
+<li><code>C_HOUR_M</code> = 1, accidente en la mañana</li>
+<li><code>C_RALN</code> = 1, carretera recta sin pendiente ni otro tipo de anomalía</li>
+<li><code>C_WTHR</code> = 0, mal tiempo</li>
+</ul>
+<p>Estas variables fuerzan la predicción a indicar que no va a ser mortal. Si analizamos los gráficos categóricos realizados en el EDA y el preprocesado, observaremos que esta situación se da en esas categorías.</p>
+<p>Por otro lado, las variables <strong>azules</strong>.</p>
+<ul>
+<li><code>C_CONF_TS</code> = 0, Vehículos no iban en la misma dirección.</li>
+<li><code>C_CONF_O</code> = 0, no es un único vehículo.</li>
+<li><code>C_WDAY</code> = 1, fin de semana</li>
+<li><p><code>C_PERS</code> = 4, cuatro personas</p>
+<p>Estas variables fuerzan la predicción a indicar que será mortal.</p>
+</li>
+</ul>
+<p>La predicción final da un valor de 0.59 que es el resultado de calcular el valor base, es decir, el valor medio del peso medio de todas las variables más/menos los pesos medios de las variables según fuercen a un lado u a otro. En este caso podemos pensar que el valor, cercano a 1. Por lo que no habrá fallecidos.</p>
 <p>A continuación, vamos a mostrar qué sucedió realmente en este accidente:</p>
 
 </div>
@@ -13958,7 +13978,7 @@ Name: C_SEV, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>El valor es 1, lo que indica que en este accidente no hubo fallecidos, por lo que en este caso concreto, el modelo habría errado en su predicción.</p>
+<p>El valor es 1, lo que indica que en este accidente no hubo fallecidos, por lo que en este caso concreto, el modelo habría acertado en su predicción.</p>
 
 </div>
 </div>
@@ -14133,8 +14153,8 @@ Name: C_SEV, dtype: int64</pre>
 <p>Los resultados siguen siendo consistentes con los gráficos anteriores, ya que <code>C_CONF_TS</code>, <code>C_TRAF</code> y <code>C_VEHS</code> continúan siendo las variables más importantes.</p>
 <p>Este gráfico relaciona si el valor que toma una variable es, en primer lugar, alto o bajo, y en segundo lugar, cómo afecta que ese valor sea alto o bajo a la hora de determinar si hay un fallecido o no. Esto se entenderá mejor con los siguientes ejemplos empíricos, basándonos en los resultados del modelo:</p>
 <ul>
-<li>Cuando la variable <code>C_CONF_TS</code> toma valores <strong>altos</strong> (es decir, cuando el accidente es de dos vehículos en mismo sentido), la probabilidad de que el accidente no sea mortal, aumenta de una manera destacada. </li>
-<li>Cuando la variable <code>C_TRAF</code> toma valores <strong>bajos</strong> (es decir, hay menos señales de tráfico en las carreteras), la probabilidad de que el accidente sea mortal aumenta. </li>
+<li>Cuando la variable <code>C_CONF_TS</code> toma valores <strong>altos</strong> (es decir, cuando el accidente es de dos vehículos en mismo sentido), la probabilidad de que el accidente <strong>NO</strong> sea mortal aumenta de una manera destacada. </li>
+<li>Cuando la variable <code>C_TRAF</code> toma valores <strong>bajos</strong> (es decir, hay señales de tráfico en las carreteras), la probabilidad de que haya fallecidos disminuye enormemente. </li>
 </ul>
 <p>Cabe destacar también que <code>C_RCFG</code> (configuración de la cerretera),  <code>C_HOUR_M</code> (accidentes sucedidos por la mañana) y <code>C_RALN</code> (alineación de la carretera) son también variables que ayudan enormemente a la hora de determinar la siniestralidad en un accidente.</p>
 
