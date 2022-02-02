@@ -37,3 +37,7 @@ Autores / Authors:
 
 Se pueden leer detalles de los paquetes y entorno utilizados en el archivo ```CONFIG.md```
 <br>
+
+### API
+El modelo resultante de este trabajo se utiliza para desarrollar una API. Puedes ver la API en el siguiente repositorio: https://github.com/carviagu/canadian_car_accidents_api /  https://github.com/aserincon/canadian_car_accidents_api
+
